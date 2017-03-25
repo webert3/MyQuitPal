@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.webert3.imagedisplayapp">
+
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+
+    <application
+        android:name=".Helpers.AnalyticsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!-- Google Analytics stuff -->
+
+        <!-- Optionally, register AnalyticsReceiver and AnalyticsService to support background
+             dispatching on non-Google Play devices -->
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+                  android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+                 android:enabled="true"
+                 android:exported="false"/>
+
+        <!-- Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting -->
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" />
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".Activities.Overview.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+         <!--Main activity -->
+        <activity android:name=".Activities.Overview.MyCalendar"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- First Lapse Scatterchart -->
+        <activity android:name=".Activities.Compare.FirstLapseScatterChart" />
+
+        <!-- Data-By-Day Linechart -->
+        <activity android:name=".Activities.Analytics.DataByDay" />
+
+        <!-- All Days Data ListView -->
+        <activity android:name=".Activities.Analytics.AllDaysListView" />
+
+        <!-- Compare Interface - Menu -->
+        <activity android:name=".Activities.Compare.CompareInterfaceMenu" />
+
+        <!-- Compare Interface - Number of cigs smoked - Post Quit -->
+        <activity android:name=".Activities.Compare.CigrettesPostRelapse" />
+
+        <!-- Compare Interface - All Relapses - Post Quit -->
+        <activity android:name=".Activities.Compare.RelativeRelapses" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.Map.MapsActivity"
+            android:label="@string/title_activity_maps"
+            >
+        </activity>
+    </application>
+
+</manifest>

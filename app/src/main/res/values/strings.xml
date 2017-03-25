@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Lapse</string>
+
+    <!-- Toolbar Strings -->
+    <string name="calendar_view"><i>myCalendar</i></string>
+    <string name="analytics_view"><i>Analytics</i></string>
+    <string name="compare_view"><i>Compare</i></string>
+
+    <!-- Calendar Interface Strings -->
+    <string name="CLEAN_0_DAYS">You have been clean for 0 days. Give it another chance!</string>
+    <string name="CLEAN_1_DAY">You have been clean for 1 day! </string>
+    <string name="CLEAN_N_DAYS">You have been clean for %1$d days!</string>
+    <string name="TODAY_DATE">Today\'s date is %1$s</string>
+    <string name="DATE_SELECTED">Date selected: %1$s</string>
+    <string name="HOLD_TODAY">Hold today\'s date to see how you\'re doing.</string>
+    <string name="CIGS_SMOKED">Number of cigarettes smoked: %1$d</string>
+    <string name="STRESS_DESCRIPTION">Average stress for the day: %1$s (%2$s)</string>
+    <string name="ON_TOUCH_INSTRUCTIONS">Select a colored date for that day\'s progress!</string>
+    <string name="ON_HOLD_INSTRUCTIONS">Press and hold a colored date to bring up that day\'s chart!</string>
+    <string name="wwu_fullname">Western Washington University</string>
+
+    <!-- Analytics interface -->
+    <string name="ANALYTICS_INSTRUCTIONS">Scroll up \u0026 down to view all day\'s
+        data</string>
+
+    <!-- Compare interface -->
+    <string name="first_lapse_description">Time of First Lapse - All Participants</string>
+    <string name="prequit_header">- Pre-Quit Day</string>
+    <string name="postquit_header">- Post-Quit Day</string>
+    <string name="time_of_first_lapse_button_title">1st Lapse of All Participants</string>
+    <string name="num_smoked_title">Cigarettes Smoked in Post-Quit Phase</string>
+    <string name="hours_til_next_lapse_title">Relative Time of All Relapses</string>
+    <string name="time_lapse_icon">Time of Lapse Icon</string>
+    <string name="num_smoked_icon">Number Cigs Smoked Icon</string>
+    <string name="first_lapse_icon">First Lapses Icon</string>
+    <string name="num_people">Number of People</string>
+    <string name="num_smoked_x_axis_label">Number of Cigarettes Smoked - Post Quit</string>
+    <string name="time_xaxis_label">Time of Day</string>
+    <string name="stress_level_yaxis_label">Stress Level</string>
+    <string name="relative_relapses_xaxis_label">Hours Past First Lapse</string>
+    <string name="relative_relapses_title">All Relapses - Post Quit</string>
+    <string name="low_stress">Low Stress</string>
+    <string name="mod_stress">Moderate Stress</string>
+    <string name="high_stress">High Stress</string>
+    <string name="my_lapses">My Lapses</string>
+    <string name="num_i_smoked">Number of Cigarettes I Smoked</string>
+    <string name="NON_DATA_DAY">There is no data for the selected date.</string>
+    <string name="lapse_incident">Smoking incident(s) between the hour.</string>
+    <string name="my_stress_level">My Stress Level: </string>
+    <string name="stress_level">Stress Level: </string>
+
+
+    <string name="title_activity_maps">Maps</string>
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+    <string name="google_maps_key">AIzaSyALDPmSpL_j-qgdqpqwbHlBz0waGd4OzXY</string>
+    <string name="map_view">Smoking Map</string>
+
+</resources>

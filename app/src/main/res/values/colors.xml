@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Misc. -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="BLACK">#000000</color>
+
+    <!-- Calendar Stress Colors -->
+    <color name="colorAccent">#FF0000</color>
+    <color name="STRESS_0.9">#ff3300</color>
+    <color name="STRESS_0.8">#ff6600</color>
+    <color name="STRESS_0.7">#ff9900</color>
+    <color name="STRESS_0.6">#ffCC00</color>
+    <color name="STRESS_0.5">#ffff00</color>
+    <color name="STRESS_0.4">#ffff33</color>
+    <color name="STRESS_0.3">#ffff66</color>
+    <color name="STRESS_0.2">#ffff99</color>
+    <color name="STRESS_0.1">#ffffcc</color>
+    <color name="DEFAULT_WHITE">#ffffff</color>
+
+    <!-- Calendar View -->
+
+    <color name="cell_gray_bg">#E0E0E0</color>
+
+    <!-- Toolbar -->
+
+    <!-- Blue-Grey -->
+    <color name="md_blue_grey_50">#ECEFF1</color>
+    <color name="md_blue_grey_800">#37474F</color>
+
+    <!-- Linecharts -->
+    <color name="transparent">#00000000</color>
+    <color name="LTGREY">#ffcccccc</color>
+
+    <!-- Compare Interface -->
+
+        <!-- More opaque colors, used for non-user data points -->
+        <color name="opaque_yellow">#BFffff66</color>
+        <color name="opaque_red">#BFFF0000</color>
+        <color name="opaque_orange">#BFff9900</color>
+
+        <!-- Less opaque colors, used for user data points -->
+        <color name="less_opaque_yellow">#FFe6e600</color>
+        <color name="less_opaque_red">#FFe60000</color>
+        <color name="less_opaque_orange">#FFcc7a00</color>
+
+        <!-- Cigarettes Post Relapse -->
+        <color name="blue_bar">#3366cc</color>
+        <color name="darker_blue_bar">#1f3d7a</color>
+        <color name="WHITE">#ffffff</color>
+
+</resources>

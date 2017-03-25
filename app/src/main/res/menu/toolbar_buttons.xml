@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/calendar_view"
+        android:icon="@drawable/ic_event_white_24dp"
+        android:id="@+id/calendar_toolbar_icon"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="@string/analytics_view"
+        android:icon="@drawable/ic_assessment_white_24dp"
+        android:id="@+id/analytics_toolbar_icon"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="@string/compare_view"
+        android:icon="@drawable/ic_people_white_24dp"
+        android:id="@+id/compare_toolbar_icon"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="@string/map_view"
+        android:icon="@drawable/ic_place_white_24dp"
+        android:id="@+id/map_toolbar_icon"
+        app:showAsAction="always"
+        />
+
+
+</menu>
+

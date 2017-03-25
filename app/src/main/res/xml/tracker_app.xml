@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="ga_trackingId">UA-78175502-3</string>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <screenName name="com.example.webert3.imagedisplayapp.Activities.Overview.MyCalendar">
+        Calendar Screen
+    </screenName>
+    <screenName name="com.example.webert3.imagedisplayapp.Activities.Compare.FirstLapseScatterChart">
+        First Lapse Scatter Chart
+    </screenName>
+    <screenName name="com.example.webert3.imagedisplayapp.Activities.Analytics.DataByDay">
+        Data By Day Chart
+    </screenName>
+    <screenName name="com.example.webert3.imagedisplayapp.Activities.Overview.SplashScreen">
+        Splash Screen
+    </screenName>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_blue_background">
+
+    <include layout="@layout/toolbar"
+             android:id="@+id/first_lapse_toolbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_lapse_title"
+        android:text="@string/first_lapse_description"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/first_lapse_toolbar"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/first_lapse_title"/>
+    <com.github.mikephil.charting.charts.ScatterChart
+        android:id="@+id/first_lapse_scatter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"/>
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/first_lapse_scatter"/>
+
+</RelativeLayout>

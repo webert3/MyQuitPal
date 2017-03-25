@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/grey_blue_background">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/main_activity_toolbar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daysClean"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/main_activity_toolbar"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/daysClean"
+            android:id="@+id/caldroid_fragment">
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caldroid_fragment"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/date_today_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/dayStats_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1.0"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+        </ScrollView>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

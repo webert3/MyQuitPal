@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/grey_blue_background"
+              android:onClick="onButtonClicked">
+    <include layout="@layout/toolbar"
+             android:id="@+id/compare_menu_toolbar"/>
+    <!-- todo: Fix centering scrollview in view port...  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            android:gravity="center_vertical">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+
+                          android:layout_centerHorizontal="true"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_of_first_lapse_button"
+                    android:layout_gravity="center"
+                    android:background="@drawable/first_lapse_icon"
+                    android:onClick="onButtonClicked"
+                    android:contentDescription="@string/first_lapse_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_of_first_lapse_button_title"
+                    android:id="@+id/time_of_first_lapse_button_title"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold|italic"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/num_smoked_button"
+                    android:layout_gravity="center"
+                    android:background="@drawable/num_smokes_icon_rsz"
+                    android:onClick="onButtonClicked"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/num_smoked_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_smoked_title"
+                    android:id="@+id/relative_relapses_title"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hours_til_next_lapse_button"
+                    android:layout_gravity="center"
+                    android:background="@drawable/time_of_relapses_icon"
+                    android:onClick="onButtonClicked"
+                    android:contentDescription="@string/time_lapse_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hours_til_next_lapse_title"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/hours_til_next_lapse_title"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

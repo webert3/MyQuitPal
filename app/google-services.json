@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "741699493197",
+    "project_id": "imagedisplayapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741699493197:android:9072f06fdf8444fa",
+        "android_client_info": {
+          "package_name": "com.example.webert3.imagedisplayapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh7lHVv43e-seVwLmraUaggC6rGUZaCYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-78175502-3"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
