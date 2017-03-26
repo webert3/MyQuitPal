@@ -14,7 +14,9 @@ The next step will utilizing wearable technology to provide close to real-time d
 # Demo
 Check out this <a href="https://www.youtube.com/watch?v=siVb0rgJQ-g">brief demonstration</a> of the app!
 
-<center>
+|Screenshots |
+|:---:|
+|
 
 |Overview Interface   |Analytics Interface   |
 |:---:|:---:|
@@ -24,7 +26,7 @@ Check out this <a href="https://www.youtube.com/watch?v=siVb0rgJQ-g">brief demon
 |:---:|:---:|
 |[![ScreenShot](https://github.com/webert3/MyQuitPal/blob/master/screenshots/compare.png)](https://www.youtube.com/watch?v=3kSD3-wXqIg)    |[![ScreenShot](https://github.com/webert3/MyQuitPal/blob/master/screenshots/map.png)](https://www.youtube.com/watch?v=3kSD3-wXqIg)    |
 
-</center>
+|
 
 # Credits
 Special thanks to Philipp Jahoda (<a href="https://github.com/PhilJay"><em>PhilJay</em></a>), creator of the awesome android visualization library <a href="https://github.com/PhilJay/MPAndroidChart"><b>MPAndroidChart</b></a>. Thank you to <a href="https://github.com/roomorama"><em>Roomorama</em></a> as well, creator of the android calendar library <a href="https://github.com/roomorama/Caldroid"><b>Caldroid</b></a>.
