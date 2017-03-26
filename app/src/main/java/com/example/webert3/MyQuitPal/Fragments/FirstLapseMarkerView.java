@@ -54,11 +54,11 @@ public class FirstLapseMarkerView extends MarkerView {
         ScatterchartFirstLapseStruct fs = (ScatterchartFirstLapseStruct) entry.getData();
 
         if (fs.id == 6012) {
-            marker.setText("My Lapse - ");
+            marker.setText(getContext().getResources().getString(R.string.my_lapse_time));
             marker.append(militaryToStandard(fs.time_formatted.substring(0,5)));
         } else {
-            marker.setText("Lapsed at ");
-            marker.append(militaryToStandard(fs.time_formatted.substring(0,5)));
+            marker.setText(getContext().getResources().getString(R.string.other_user_lapse_time)+" ");
+            marker.append(militaryToStandard(fs.time_formatted.substring(0,5))+" ");
         }
     }
 
@@ -68,14 +68,22 @@ public class FirstLapseMarkerView extends MarkerView {
 
         if (hr > 12) {
             hr -= 12;
-            time = String.format("%02d", hr)+":"+String.format("%02d", min)+" PM";
+            if (hr > 9) {
+                time = String.format("%02d", hr) + ":" + String.format("%02d", min) + " PM";
+            } else {
+                time = hr + ":" + String.format("%02d", min) + " PM";
+            }
         } else if (hr == 12) {
             time = String.format("%02d", hr)+":"+String.format("%02d", min)+" PM";
         } else if (hr == 0) {
             hr = 12;
             time = String.format("%02d", hr)+":"+String.format("%02d", min)+" AM";
         } else {
-            time = String.format("%02d", hr)+":"+String.format("%02d", min)+" AM";
+            if (hr > 9) {
+                time = String.format("%02d", hr) + ":" + String.format("%02d", min) + " AM";
+            } else {
+                time = hr + ":" + String.format("%02d", min) + " AM";
+            }
         }
 
         return time;

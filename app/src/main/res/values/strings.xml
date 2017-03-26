@@ -61,5 +61,7 @@
     <string name="smoking_incident">Smoking Incident</string>
     <string name="smoking_hotspot">Smoking Hotspot</string>
     <string name="current_location">Current Location</string>
+    <string name="my_lapse_time">My Lapse - </string>
+    <string name="other_user_lapse_time">Lapsed at </string>
 
 </resources>
