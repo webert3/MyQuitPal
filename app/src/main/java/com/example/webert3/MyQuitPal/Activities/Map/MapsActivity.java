@@ -373,7 +373,7 @@ public class MapsActivity extends AppCompatActivity
                     return info;
                 }
             });
-            marker.setAlpha(Integer.parseInt(randomStrings[1].substring(3,5))/18f);
+            marker.setAlpha(Integer.parseInt(randomStrings[1].substring(3,5))/20f);
 
             builder.include(marker.getPosition());
 
