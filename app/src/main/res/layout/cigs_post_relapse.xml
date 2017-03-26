@@ -31,7 +31,7 @@
         android:layout_below="@+id/divider_under_title"
         android:layout_above="@+id/legend_and_axis_label"
         android:id="@+id/chart_yaxis_container">
-        <com.example.webert3.imagedisplayapp.Helpers.VerticalTextView
+        <com.example.webert3.MyQuitPal.Helpers.VerticalTextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/num_people"

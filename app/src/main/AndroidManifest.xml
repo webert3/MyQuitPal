@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.webert3.imagedisplayapp">
+    package="com.example.webert3.MyQuitPal">
 
     <uses-permission android:name="android.permission.SET_DEBUG_APP"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -11,7 +11,7 @@
     <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
 
     <application
-        android:name=".Helpers.AnalyticsApplication"
+        android:name="com.example.webert3.MyQuitPal.Helpers.AnalyticsApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -47,7 +47,7 @@
 
         <!-- Splash screen -->
         <activity
-            android:name=".Activities.Overview.SplashScreen"
+            android:name="com.example.webert3.MyQuitPal.Activities.Overview.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
@@ -59,7 +59,7 @@
         </activity>
 
          <!--Main activity -->
-        <activity android:name=".Activities.Overview.MyCalendar"
+        <activity android:name="com.example.webert3.MyQuitPal.Activities.Overview.MyCalendar"
                   android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,22 +69,22 @@
         </activity>
 
         <!-- First Lapse Scatterchart -->
-        <activity android:name=".Activities.Compare.FirstLapseScatterChart" />
+        <activity android:name="com.example.webert3.MyQuitPal.Activities.Compare.FirstLapseScatterChart" />
 
         <!-- Data-By-Day Linechart -->
-        <activity android:name=".Activities.Analytics.DataByDay" />
+        <activity android:name="com.example.webert3.MyQuitPal.Activities.Analytics.DataByDay" />
 
         <!-- All Days Data ListView -->
-        <activity android:name=".Activities.Analytics.AllDaysListView" />
+        <activity android:name="com.example.webert3.MyQuitPal.Activities.Analytics.AllDaysListView" />
 
         <!-- Compare Interface - Menu -->
-        <activity android:name=".Activities.Compare.CompareInterfaceMenu" />
+        <activity android:name="com.example.webert3.MyQuitPal.Activities.Compare.CompareInterfaceMenu" />
 
         <!-- Compare Interface - Number of cigs smoked - Post Quit -->
-        <activity android:name=".Activities.Compare.CigrettesPostRelapse" />
+        <activity android:name="com.example.webert3.MyQuitPal.Activities.Compare.CigrettesPostRelapse" />
 
         <!-- Compare Interface - All Relapses - Post Quit -->
-        <activity android:name=".Activities.Compare.RelativeRelapses" />
+        <activity android:name="com.example.webert3.MyQuitPal.Activities.Compare.RelativeRelapses" />
 
 
         <meta-data
@@ -92,7 +92,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Activities.Map.MapsActivity"
+            android:name="com.example.webert3.MyQuitPal.Activities.Map.MapsActivity"
             android:label="@string/title_activity_maps"
             >
         </activity>

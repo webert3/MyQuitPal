@@ -35,8 +35,8 @@
             android:gravity="center_vertical"
             android:padding="5dp"
             android:drawablePadding="8dp"
-            android:drawableLeft="@drawable/ic_cigarette"
-            android:text="Smoking Incident"/>
+            android:drawableLeft="@drawable/cig_icon_map_w35px"
+            android:text="@string/smoking_incident"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -44,7 +44,17 @@
             android:textColor="@android:color/black"
             android:gravity="center_vertical"
             android:drawableLeft="@drawable/map_circle"
-            android:text="Frequent Smoking Area"
+            android:text="@string/smoking_hotspot"
+            android:drawablePadding="8dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/blue_circle"
+            android:text="@string/current_location"
             android:drawablePadding="8dp"
             />
     </LinearLayout>

@@ -1,14 +1,14 @@
 {
   "project_info": {
     "project_number": "741699493197",
-    "project_id": "imagedisplayapp"
+    "project_id": "MyQuitPal"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:741699493197:android:9072f06fdf8444fa",
         "android_client_info": {
-          "package_name": "com.example.webert3.imagedisplayapp"
+          "package_name": "com.example.webert3.MyQuitPal"
         }
       },
       "oauth_client": [],

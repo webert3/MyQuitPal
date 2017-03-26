@@ -3,11 +3,11 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.example.webert3.imagedisplayapp"
         minSdkVersion 15
+        applicationId "com.example.webert3.MyQuitPal"
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
