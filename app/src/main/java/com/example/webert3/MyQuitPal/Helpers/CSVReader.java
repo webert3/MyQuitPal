@@ -205,7 +205,7 @@ public class CSVReader {
 
         try {
             AssetManager am = ctx.getAssets();
-            InputStream is = am.open("all_lapses_post-quit.csv");
+            InputStream is = am.open("all_lapses_postQuit.csv");
             BufferedReader reader = new BufferedReader(new InputStreamReader(is));
             String line;
             try {

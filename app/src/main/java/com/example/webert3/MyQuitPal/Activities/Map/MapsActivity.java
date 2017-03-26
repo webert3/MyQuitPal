@@ -332,7 +332,7 @@ public class MapsActivity extends AppCompatActivity
     private LatLngBounds.Builder setMapIcons(double lat, double lng) {
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
         Random r = new Random();
-        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.ic_cigarette);
+        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.cig_icon_map_w35px);
         for (int i = 0; i < 10; i++) {
             int flag = 1;
             if (r.nextBoolean()) {
@@ -378,17 +378,17 @@ public class MapsActivity extends AppCompatActivity
             builder.include(marker.getPosition());
 
             // circle
-            if (i % 3 == 0) {
+            if (i % 5 == 0) {
                 mMap.addCircle(new CircleOptions()
                         .center(new LatLng(randLat, randLng))
                         .radius(100)
-                        .strokeWidth(2)
+                        .strokeWidth(0)
                         .strokeColor(Color.RED)
                         .fillColor(Color.argb(50, 255, 0, 0)));
                 mMap.addCircle(new CircleOptions()
                         .center(new LatLng(randLat + r.nextFloat() * 0.006f*flag, randLng + r
                                 .nextFloat() * 0.006f*flag)).radius(100)
-                        .strokeWidth(2)
+                        .strokeWidth(0)
                         .strokeColor(Color.RED)
                         .fillColor(Color.argb(50, 255, 0, 0)));
             }
